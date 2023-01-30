@@ -1,10 +1,10 @@
 --   ---------Exersise1----------
 
 -- Write an SQL query to return:
--- 				1. all the products in the database
--- 				2. name
--- 				3. unit price
--- 				2. discounted price of 5%
+-- 	1. all the products in the database
+-- 	2. name
+-- 	3. unit price
+-- 	2. discounted price of 5%
 
 
 --  ------------ solution1----------
