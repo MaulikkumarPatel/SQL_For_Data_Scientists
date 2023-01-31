@@ -741,3 +741,38 @@ on c.customer_id = o.customer_id;
 
 -- the use of LEFT and RIGHT join is to give high priority to any table.
 
+
+-- INSERTING Multiple Data Into Existing Table
+
+use sql_store;
+
+select *
+from shippers;
+
+insert into shippers
+values(default,'RK'); -- here we have insert data into table 
+
+insert into shippers
+values(default,'mm'),
+	(default,'kk'), -- here we have insert multiple data at a time
+    (default,'pp');
+    
+    
+    
+-- Creating a copy of a table
+
+create table new_orders as
+select* from orders; -- you clear the data as well of data using truncate
+truncate sql_store.new_orders;
+
+select * from new_orders;
+
+-- Here we are gonna insert some data 
+insert into new_orders 
+select *
+from orders
+where order_date <'2019-01-01';
+
+-- now successfully we have insert data of those orders which was done before '201-01-01 and saved into new_orders'
+
+select * from new_orders; 
