@@ -76,8 +76,7 @@ create table customer(
             product varchar(10),
             Product_ID int,
            -- Product_ID int primary key,
-            primary key(Product_ID)
-					);
+            primary key(Product_ID));
                     
 select * from customer;
 
