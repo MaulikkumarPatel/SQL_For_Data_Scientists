@@ -1,5 +1,4 @@
 Repository: SQL_For_Data_Scientists
-Author: Maulikkumar Patel
 
 Description:
 Welcome to the "SQL_For_Data_Scientists" repository! 🚀
